@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowRight, Sparkles } from "lucide-react"
+import { ArrowRight, Plus } from "lucide-react"
 
 const promptPills = [
   "Find 200 SaaS founders in Austin and build a sequence to book demos.",
@@ -37,31 +37,37 @@ export function Hero() {
 
       {/* Command Prompt UI */}
       <div className="z-20 w-full max-w-2xl">
-        <div className="relative w-full">
-          <div className="flex w-full p-1 border rounded-full relative h-fit bg-white border-monara-gray-200 pl-5 prompt-shadow transition-shadow duration-300 hover:shadow-[0px_0px_40px_0px_rgba(106,27,224,0.2),0px_2px_10px_2px_rgba(0,0,0,0.1),0px_0px_0px_1px_rgba(196,165,255,0.3)]">
-            <input
-              type="text"
-              placeholder="Ask Monara to build your next campaign..."
-              className="flex-1 bg-transparent text-monara-gray-900 text-sm md:text-base placeholder:text-monara-gray-400 focus:outline-none font-inter py-3"
-            />
-            <button className="flex-shrink-0 size-11 rounded-full gradient-btn flex items-center justify-center transition-transform duration-200 hover:scale-105 active:scale-95">
-              <ArrowRight className="size-5 text-white" />
+        <div className="w-full bg-white border border-monara-gray-200 rounded-2xl p-3 md:p-6 prompt-shadow transition-shadow duration-300 hover:shadow-[0px_0px_40px_0px_rgba(106,27,224,0.2),0px_2px_10px_2px_rgba(0,0,0,0.1),0px_0px_0px_1px_rgba(196,165,255,0.3)]">
+          <textarea
+            placeholder="Ask Monara to build your next campaign..."
+            className="w-full min-h-[60px] md:min-h-[70px] bg-transparent border-none outline-none resize-none text-monara-gray-900 placeholder:text-monara-gray-400 font-inter text-sm md:text-lg focus:outline-none focus:ring-0 mb-3 md:mb-4"
+          />
+          <div className="flex items-center justify-between gap-1.5 md:gap-2">
+            <div className="flex items-center gap-1.5 md:gap-2">
+              <button
+                type="button"
+                aria-label="Add attachment"
+                className="h-10 w-10 md:h-12 md:w-12 rounded-full border border-monara-gray-200 hover:bg-monara-gray-100 hover:border-monara-gray-300 flex items-center justify-center transition-colors"
+              >
+                <Plus className="h-4 w-4 md:h-5 md:w-5 text-monara-gray-600" />
+              </button>
+            </div>
+            <button
+              type="button"
+              aria-label="Submit"
+              className="h-10 w-10 md:h-12 md:w-12 rounded-full gradient-btn flex items-center justify-center hover:opacity-90 transition-opacity ml-auto flex-shrink-0"
+            >
+              <ArrowRight className="h-4 w-4 md:h-6 md:w-6 text-white" />
             </button>
           </div>
         </div>
-      </div>
 
-      {/* Prompt Pills */}
-      <div className="z-10 w-full max-w-3xl flex flex-col items-center gap-3">
-        <div className="flex items-center gap-2 text-sm text-monara-gray-500 font-inter">
-          <Sparkles className="size-4 text-monara-purple-600" />
-          Not sure how to start? Try one:
-        </div>
-        <div className="flex flex-wrap justify-center gap-2">
+        {/* Prompt Pills */}
+        <div className="flex overflow-x-auto gap-2 mt-4 pb-2 sm:flex-wrap sm:justify-center sm:overflow-visible">
           {promptPills.map((pill, i) => (
             <button
               key={i}
-              className="px-4 py-2 text-xs md:text-sm font-medium bg-white rounded-full border border-monara-purple-200/60 text-monara-gray-700 hover:border-monara-purple-400 hover:text-monara-purple-700 hover:bg-monara-purple-50 transition-all duration-300 font-inter text-left shadow-sm"
+              className="px-4 py-2 text-sm rounded-full border border-monara-purple-200/60 bg-white/50 hover:bg-monara-purple-50 hover:border-monara-purple-400 text-monara-gray-700 hover:text-monara-purple-700 transition-colors flex-shrink-0 whitespace-nowrap font-inter"
             >
               {pill}
             </button>
