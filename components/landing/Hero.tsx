@@ -31,8 +31,7 @@ export function Hero() {
       <p className="w-full max-w-3xl text-lg font-medium leading-7 font-inter text-monara-gray-700 z-10 px-2 md:px-8">
         Meet Monara, the AI co-founder built to drive consistent revenue growth
         on autopilot. From finding verified leads to booking sales calls or
-        flooding your dashboard with direct sign-ups—Monara handles the entire
-        outbound funnel 24/7 so you can focus on building a world-class product.
+        flooding your dashboard with direct sign-ups.
       </p>
 
       {/* Command Prompt UI */}
