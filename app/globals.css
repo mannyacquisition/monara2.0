@@ -4,19 +4,19 @@
   --font-dm-sans: "DM Sans", sans-serif;
   --font-inter: "Inter", sans-serif;
 
-  /* Monara brand palette (mapped from Artisan's extracted hex codes) */
-  --color-monara-purple-50: #F3ECFF;
-  --color-monara-purple-100: #E0D1FF;
-  --color-monara-purple-200: #CFB5FF;
-  --color-monara-purple-400: #AD81FF;
-  --color-monara-purple-500: #8E5AFF;
-  --color-monara-purple-600: #7D37FF;
-  --color-monara-purple-700: #6A1BE0;
-  --color-monara-purple-800: #7B2FF8;
-  --color-monara-magenta: #E36BFF;
-  --color-monara-peach: #FFAEA5;
-  --color-monara-peach-light: #FFE8E5;
-  --color-monara-peach-50: #FFEEEB;
+  /* Monara brand palette — White / Peachy-Orange / Deep Purple */
+  --color-monara-purple-50: #F0EDFF;    /* very pale deep purple — hover/bg tints */
+  --color-monara-purple-100: #E2DAFF;
+  --color-monara-purple-200: #C4B5F7;   /* light deep purple — borders */
+  --color-monara-purple-400: #8B72E8;   /* lighter deep purple — accents */
+  --color-monara-purple-500: #7057DE;   /* medium deep purple */
+  --color-monara-purple-600: #5D3FD3;   /* primary deep royal purple */
+  --color-monara-purple-700: #4A31A8;   /* darker deep purple */
+  --color-monara-purple-800: #3D279C;   /* darkest deep purple */
+  --color-monara-magenta: #FF9A76;      /* replaced with warm peach accent */
+  --color-monara-peach: #FF9A76;        /* warm peach — energy gradient start */
+  --color-monara-peach-light: #FFDEC7;  /* pale peach — for background blurs */
+  --color-monara-peach-50: #FFF5EF;     /* very pale peach */
 
   --color-monara-gray-25: #FAFAFA;
   --color-monara-gray-50: #F9F9F9;
@@ -24,25 +24,25 @@
   --color-monara-gray-200: #E9EAF2;
   --color-monara-gray-300: #D1D5DB;
   --color-monara-gray-400: #9CA3AF;
-  --color-monara-gray-500: #6B7280;
-  --color-monara-gray-700: #374151;
-  --color-monara-gray-800: #1F2937;
-  --color-monara-gray-900: #111827;
+  --color-monara-gray-500: #666666;     /* secondary text */
+  --color-monara-gray-700: #444444;
+  --color-monara-gray-800: #333333;
+  --color-monara-gray-900: #222222;     /* primary text — soft black */
   --color-monara-gray-950: #0A0B14;
 }
 
 :root {
   --background: #ffffff;
-  --foreground: #111827;
+  --foreground: #222222;
   --card: #ffffff;
-  --card-foreground: #111827;
-  --primary: #7D37FF;
+  --card-foreground: #222222;
+  --primary: #5D3FD3;
   --primary-foreground: #ffffff;
   --muted: #F3F4F6;
-  --muted-foreground: #6B7280;
+  --muted-foreground: #666666;
   --border: #E9EAF2;
   --input: #E9EAF2;
-  --ring: #7D37FF;
+  --ring: #5D3FD3;
   --radius: 0.5rem;
 }
 
@@ -63,15 +63,15 @@
   }
 }
 
-/* Artisan-matched glow blob backgrounds */
+/* Subtle background blurs — pale peach + pale purple blend */
 .hero-bg {
-  background: radial-gradient(ellipse 600px 400px at 20% 30%, rgba(125, 55, 255, 0.08), transparent 70%),
-              radial-gradient(ellipse 500px 350px at 80% 20%, rgba(255, 174, 165, 0.1), transparent 70%),
-              radial-gradient(ellipse 400px 300px at 50% 80%, rgba(227, 107, 255, 0.06), transparent 70%),
+  background: radial-gradient(ellipse 600px 400px at 20% 30%, rgba(224, 214, 246, 0.5), transparent 70%),
+              radial-gradient(ellipse 500px 350px at 80% 20%, rgba(255, 222, 199, 0.5), transparent 70%),
+              radial-gradient(ellipse 400px 300px at 50% 80%, rgba(255, 154, 118, 0.06), transparent 70%),
               #ffffff;
 }
 
-/* Dark section bg - from Artisan's dark cards area */
+/* Dark section bg */
 .dark-section-bg {
   background: linear-gradient(180deg, #0A0B14 0%, #111827 100%);
 }
@@ -89,11 +89,11 @@
   backdrop-filter: blur(16px);
 }
 
-/* Prompt input extracted shadow math */
+/* Prompt input shadow — peach-orange glow */
 .prompt-shadow {
-  box-shadow: 0px 0px 30px 0px rgba(106, 27, 224, 0.15),
+  box-shadow: 0px 0px 30px 0px rgba(255, 94, 58, 0.15),
               0px 2px 10px 2px rgba(0, 0, 0, 0.08),
-              0px 0px 0px 1px rgba(196, 165, 255, 0.2);
+              0px 0px 0px 1px rgba(255, 154, 118, 0.2);
 }
 
 /* Feature card shadow */
@@ -101,61 +101,61 @@
   box-shadow: 1px 1px 20px -5px rgba(0, 0, 0, 0.30);
 }
 
-/* CTA pill shadow */
+/* CTA pill shadow — peach-orange glow */
 .cta-shadow {
-  box-shadow: 0px 0px 10px 0px rgba(125, 55, 255, 0.65),
+  box-shadow: 0px 0px 10px 0px rgba(255, 94, 58, 0.65),
               0px 0.833px 2.5px 0px rgba(0, 0, 0, 0.25);
 }
 
-/* Badge shadow from Artisan */
+/* Badge shadow — deep purple glow */
 .badge-shadow {
-  box-shadow: 0px 0px 30px 0px rgba(106, 27, 224, 0.35),
+  box-shadow: 0px 0px 30px 0px rgba(93, 63, 211, 0.35),
               0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-/* Active tab ring */
+/* Active tab ring — peach-orange */
 .tab-ring {
-  box-shadow: 0px 0px 0px 2.4px rgba(196, 165, 255, 0.46);
+  box-shadow: 0px 0px 0px 2.4px rgba(255, 154, 118, 0.46);
 }
 
-/* Gradient text utility */
+/* Gradient text — Energy gradient (Peach → Red-Orange) */
 .gradient-text-primary {
-  background: linear-gradient(93deg, #6A1BE0 46.31%, #FFAEA5 93.99%);
+  background: linear-gradient(93deg, #FF9A76 0%, #FF5E3A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-text-secondary {
-  background: linear-gradient(115deg, #7D37FF 35.09%, #FFAEA5 83.25%);
+  background: linear-gradient(115deg, #FF9A76 0%, #FF5E3A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-text-cta {
-  background: linear-gradient(90deg, #7D37FF 32.55%, #FFAEA5 100%);
+  background: linear-gradient(90deg, #FF9A76 0%, #FF5E3A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Button gradients */
+/* Button gradients — Energy gradient (Peach → Red-Orange) */
 .gradient-btn {
-  background: linear-gradient(91deg, #7D37FF 15.44%, #FFAEA5 122.78%);
+  background: linear-gradient(91deg, #FF9A76 15.44%, #FF5E3A 100%);
 }
 
 .gradient-btn-vivid {
-  background: linear-gradient(100deg, #7D37FF 7.84%, #FFAEA5 91.09%);
+  background: linear-gradient(100deg, #FF9A76 7.84%, #FF5E3A 91.09%);
 }
 
 .gradient-btn-cta {
-  background: linear-gradient(91deg, #7B2FF8 14.6%, #FFAEA5 86.92%);
+  background: linear-gradient(91deg, #FF9A76 14.6%, #FF5E3A 86.92%);
 }
 
-/* Radial glow effect for inputs */
+/* Radial glow effect for inputs — peach-orange */
 .input-glow {
-  background: radial-gradient(300px at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(125, 55, 255, 0.15), transparent 60%);
+  background: radial-gradient(300px at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 94, 58, 0.15), transparent 60%);
 }
 
 /* Smooth scroll */

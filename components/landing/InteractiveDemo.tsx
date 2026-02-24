@@ -9,7 +9,7 @@ export function InteractiveDemo() {
       className="relative py-20 md:py-28 lg:py-32 bg-white overflow-hidden"
     >
       {/* Subtle background radial */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_600px_400px_at_50%_30%,rgba(243,236,255,0.5),transparent_70%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_600px_400px_at_50%_30%,rgba(255,222,199,0.4),transparent_70%)] pointer-events-none" />
 
       <div className="relative z-10 mx-auto max-w-5xl px-5 md:px-10">
         {/* Header */}
@@ -66,7 +66,7 @@ export function InteractiveDemo() {
                     className="w-full h-12 rounded-[1.25rem] px-5 text-sm font-inter bg-white border border-monara-gray-200 text-monara-gray-900 placeholder:text-monara-gray-400 focus:outline-none focus:ring-2 focus:ring-monara-purple-600/30 transition shadow-sm"
                   />
                 </div>
-                <button className="h-12 px-6 rounded-[1.25rem] gradient-btn-vivid text-white font-dm-sans font-medium text-sm flex items-center justify-center gap-2 cta-shadow transition-all duration-300 hover:shadow-[0px_0px_20px_0px_rgba(125,55,255,0.5),0px_2px_4px_0px_rgba(0,0,0,0.25)] whitespace-nowrap">
+                <button className="h-12 px-6 rounded-[1.25rem] gradient-btn-vivid text-white font-dm-sans font-medium text-sm flex items-center justify-center gap-2 cta-shadow transition-all duration-300 hover:shadow-[0px_0px_20px_0px_rgba(255,94,58,0.5),0px_2px_4px_0px_rgba(0,0,0,0.25)] whitespace-nowrap">
                   Generate Campaign
                   <ArrowRight className="size-4" />
                 </button>

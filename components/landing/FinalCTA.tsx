@@ -25,7 +25,7 @@ export function FinalCTA() {
         <div className="flex flex-col sm:flex-row gap-4 mt-2">
           <a
             href="#"
-            className="group flex items-center justify-center gap-2 px-8 py-3.5 rounded-full gradient-btn-cta text-white font-dm-sans text-base font-medium leading-6 cta-shadow transition-all duration-300 hover:shadow-[0px_0px_20px_0px_rgba(125,55,255,0.5),0px_2px_4px_0px_rgba(0,0,0,0.25)]"
+            className="group flex items-center justify-center gap-2 px-8 py-3.5 rounded-full gradient-btn-cta text-white font-dm-sans text-base font-medium leading-6 cta-shadow transition-all duration-300 hover:shadow-[0px_0px_20px_0px_rgba(255,94,58,0.5),0px_2px_4px_0px_rgba(0,0,0,0.25)]"
           >
             Start 14-Day Trial
             <ArrowRight className="size-4 text-white transition-transform group-hover:translate-x-0.5" />
