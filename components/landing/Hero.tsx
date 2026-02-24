@@ -38,7 +38,7 @@ export function Hero() {
       {/* Command Prompt UI */}
       <div className="z-20 w-full max-w-2xl">
         <div className="relative w-full">
-          <div className="flex w-full p-1 border rounded-full relative h-fit bg-white border-monara-gray-200 pl-5 prompt-shadow transition-shadow duration-300 hover:shadow-[0px_0px_40px_0px_rgba(106,27,224,0.2),0px_2px_10px_2px_rgba(0,0,0,0.1),0px_0px_0px_1px_rgba(196,165,255,0.3)]">
+          <div className="flex w-full p-1 border rounded-full relative h-fit bg-white border-monara-gray-200 pl-5 prompt-shadow transition-shadow duration-300 hover:shadow-[0px_0px_40px_0px_rgba(255,94,58,0.2),0px_2px_10px_2px_rgba(0,0,0,0.1),0px_0px_0px_1px_rgba(255,154,118,0.3)]">
             <input
               type="text"
               placeholder="Ask Monara to build your next campaign..."
@@ -61,7 +61,7 @@ export function Hero() {
           {promptPills.map((pill, i) => (
             <button
               key={i}
-              className="px-4 py-2 text-xs md:text-sm font-medium bg-white rounded-full border border-monara-purple-200/60 text-monara-gray-700 hover:border-monara-purple-400 hover:text-monara-purple-700 hover:bg-monara-purple-50 transition-all duration-300 font-inter text-left shadow-sm"
+              className="px-4 py-2 text-xs md:text-sm font-medium bg-[#F8F8F8] rounded-full border border-[#5D3FD3] text-[#5D3FD3] hover:bg-monara-purple-50 transition-all duration-300 font-inter text-left shadow-sm"
             >
               {pill}
             </button>
@@ -73,14 +73,14 @@ export function Hero() {
       <div className="z-10 flex flex-col sm:flex-row gap-3 mt-2">
         <a
           href="#cta"
-          className="group flex items-center justify-center gap-2 px-7 py-3 rounded-full text-white gradient-btn-cta font-dm-sans text-base font-medium leading-6 cta-shadow transition-all duration-300 hover:shadow-[0px_0px_20px_0px_rgba(125,55,255,0.5),0px_2px_4px_0px_rgba(0,0,0,0.25)]"
+          className="group flex items-center justify-center gap-2 px-7 py-3 rounded-full text-white gradient-btn-cta font-dm-sans text-base font-medium leading-6 cta-shadow transition-all duration-300 hover:shadow-[0px_0px_20px_0px_rgba(255,94,58,0.5),0px_2px_4px_0px_rgba(0,0,0,0.25)]"
         >
           Start 14-Day Trial
           <ArrowRight className="size-4 text-white transition-transform group-hover:translate-x-0.5" />
         </a>
         <a
           href="#demo"
-          className="flex items-center justify-center gap-2 px-7 py-3 rounded-full border border-monara-gray-300 text-monara-gray-700 font-dm-sans text-base font-medium leading-6 hover:border-monara-gray-400 hover:bg-monara-gray-50 transition-all duration-300"
+          className="flex items-center justify-center gap-2 px-7 py-3 rounded-full bg-white border border-[#5D3FD3] text-[#5D3FD3] font-dm-sans text-base font-medium leading-6 hover:bg-monara-purple-50 transition-all duration-300"
         >
           Book a Demo
         </a>
